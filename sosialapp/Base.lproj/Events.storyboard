@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dsD-1v-cdO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Aktiviteter-->
+        <scene sceneID="3KY-q3-dgB">
+            <objects>
+                <tableViewController id="n3Q-ao-sZk" customClass="EventsTableViewController" customModule="sosialapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="djg-8V-GKf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="event_cell" id="LZV-Ba-HfZ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LZV-Ba-HfZ" id="Bcd-I7-VNk">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n3Q-ao-sZk" id="dGv-bx-jtN"/>
+                            <outlet property="delegate" destination="n3Q-ao-sZk" id="7fW-wm-yIP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Aktiviteter" id="1qI-vi-N4S"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SmO-m5-L8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1530" y="317"/>
+        </scene>
+        <!--Aktiviteter-->
+        <scene sceneID="OFq-9t-RRy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dsD-1v-cdO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Aktiviteter" image="first" id="acW-dT-cKf" userLabel="Aktiviteter"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Xt-6h-3ci">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n3Q-ao-sZk" kind="relationship" relationship="rootViewController" id="i6X-Ti-RbL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18I-7A-ZV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1530" y="-467"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

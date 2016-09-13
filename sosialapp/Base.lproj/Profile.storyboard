@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vgq-3u-kCH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Profil-->
+        <scene sceneID="oWR-DB-uLM">
+            <objects>
+                <viewController title="Profil" id="dC6-jg-MDZ" customClass="ProfileViewController" customModule="sosialapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mA5-qD-ZwA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tdl-yB-kG2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Flc-15-5xc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profil" id="AIB-p8-wv3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQ8-25-n08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="802"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="RFC-Zb-e24">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vgq-3u-kCH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profil" id="oPn-os-SXH" userLabel="Profil"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gbl-DZ-wGw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dC6-jg-MDZ" kind="relationship" relationship="rootViewController" id="Ao6-bc-zNl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RmR-gC-L2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="802"/>
+        </scene>
+    </scenes>
+</document>
