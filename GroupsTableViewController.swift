@@ -44,6 +44,8 @@ class GroupsTableViewController: UITableViewController {
         cell.detailTextLabel!.text = "Test test test"
         cell.imageView?.image = UIImage(named: "group placeholder")
         
+        F
+        
         return cell
     }
 
